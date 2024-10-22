@@ -1,0 +1,27 @@
+{
+  "id": "Explanation/output-file-explanation",
+  "title": "Output folder structure explanation",
+  "description": "Genome Build Mapping outputs",
+  "source": "@site/docs/Explanation/output-file-explanation.md",
+  "sourceDirName": "Explanation",
+  "slug": "/Explanation/output-file-explanation",
+  "permalink": "/gwas_harmoniser_documentation/Explanation/output-file-explanation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/EBISPOT/gwas-sumstats-harmoniser-documentation/tree/main/docs/Explanation/output-file-explanation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Output Explanation",
+    "permalink": "/gwas_harmoniser_documentation/category/output-explanation"
+  },
+  "next": {
+    "title": "Final files description",
+    "permalink": "/gwas_harmoniser_documentation/Explanation/output-folder-structure"
+  }
+}

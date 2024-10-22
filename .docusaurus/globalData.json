@@ -1,0 +1,128 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/gwas_harmoniser_documentation/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/gwas_harmoniser_documentation/",
+          "mainDocId": "Introduction/Overview",
+          "docs": [
+            {
+              "id": "Explanation/output-file-explanation",
+              "path": "/gwas_harmoniser_documentation/Explanation/output-file-explanation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Explanation/output-folder-structure",
+              "path": "/gwas_harmoniser_documentation/Explanation/output-folder-structure",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "how-to-guide",
+              "path": "/gwas_harmoniser_documentation/how-to-guide",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Introduction/Genome-Build-Mapping",
+              "path": "/gwas_harmoniser_documentation/Introduction/Genome-Build-Mapping",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Introduction/Harmonising-the-variants",
+              "path": "/gwas_harmoniser_documentation/Introduction/Harmonising-the-variants",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Introduction/Orientation-of-palindromic-variants",
+              "path": "/gwas_harmoniser_documentation/Introduction/Orientation-of-palindromic-variants",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Introduction/Overview",
+              "path": "/gwas_harmoniser_documentation/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Introduction/Quality-control",
+              "path": "/gwas_harmoniser_documentation/Introduction/Quality-control",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Reference-guide/Hm_code",
+              "path": "/gwas_harmoniser_documentation/Reference-guide/Hm_code",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Reference-guide/Usefult-link",
+              "path": "/gwas_harmoniser_documentation/Reference-guide/Usefult-link",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tutorials/Getting-Start",
+              "path": "/gwas_harmoniser_documentation/Tutorials/Getting-Start",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tutorials/Preparing-Input-Files",
+              "path": "/gwas_harmoniser_documentation/Tutorials/Preparing-Input-Files",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tutorials/Preparing-Reference-Files",
+              "path": "/gwas_harmoniser_documentation/Tutorials/Preparing-Reference-Files",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tutorials/Preparing-the-Executor",
+              "path": "/gwas_harmoniser_documentation/Tutorials/Preparing-the-Executor",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tutorials/Running-the-Pipeline",
+              "path": "/gwas_harmoniser_documentation/Tutorials/Running-the-Pipeline",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tutorials/Running-the-Pipeline-batch",
+              "path": "/gwas_harmoniser_documentation/Tutorials/Running-the-Pipeline-batch",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/introduction",
+              "path": "/gwas_harmoniser_documentation/category/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/tutorial",
+              "path": "/gwas_harmoniser_documentation/category/tutorial",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/output-explanation",
+              "path": "/gwas_harmoniser_documentation/category/output-explanation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/reference-guides",
+              "path": "/gwas_harmoniser_documentation/category/reference-guides",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/gwas_harmoniser_documentation/category/introduction",
+                "label": "Introduction"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

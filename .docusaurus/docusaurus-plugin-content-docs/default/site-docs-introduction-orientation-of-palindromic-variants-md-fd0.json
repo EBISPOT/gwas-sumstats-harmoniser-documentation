@@ -1,0 +1,27 @@
+{
+  "id": "Introduction/Orientation-of-palindromic-variants",
+  "title": "Orientation of palindromic variants",
+  "description": "Palindromic variants are genetic variants (such as A/T or G/C SNPs) that appear identical on both the forward and reverse DNA strands, making it difficult to distinguish their true orientation. To ensure that these variants are correctly aligned during harmonisation, the pipeline employs a method to infer their strand orientation using a strand consensus approach.",
+  "source": "@site/docs/Introduction/Orientation-of-palindromic-variants.md",
+  "sourceDirName": "Introduction",
+  "slug": "/Introduction/Orientation-of-palindromic-variants",
+  "permalink": "/gwas_harmoniser_documentation/Introduction/Orientation-of-palindromic-variants",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/EBISPOT/gwas-sumstats-harmoniser-documentation/tree/main/docs/Introduction/Orientation-of-palindromic-variants.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Genome Build Mapping",
+    "permalink": "/gwas_harmoniser_documentation/Introduction/Genome-Build-Mapping"
+  },
+  "next": {
+    "title": "Harmonising the variants",
+    "permalink": "/gwas_harmoniser_documentation/Introduction/Harmonising-the-variants"
+  }
+}

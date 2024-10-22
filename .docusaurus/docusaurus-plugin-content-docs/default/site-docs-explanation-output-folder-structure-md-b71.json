@@ -1,0 +1,27 @@
+{
+  "id": "Explanation/output-folder-structure",
+  "title": "Final files description",
+  "description": "Harmonised sumstat result",
+  "source": "@site/docs/Explanation/output-folder-structure.md",
+  "sourceDirName": "Explanation",
+  "slug": "/Explanation/output-folder-structure",
+  "permalink": "/gwas_harmoniser_documentation/Explanation/output-folder-structure",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/EBISPOT/gwas-sumstats-harmoniser-documentation/tree/main/docs/Explanation/output-folder-structure.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Output folder structure explanation",
+    "permalink": "/gwas_harmoniser_documentation/Explanation/output-file-explanation"
+  },
+  "next": {
+    "title": "How-to guides",
+    "permalink": "/gwas_harmoniser_documentation/how-to-guide"
+  }
+}

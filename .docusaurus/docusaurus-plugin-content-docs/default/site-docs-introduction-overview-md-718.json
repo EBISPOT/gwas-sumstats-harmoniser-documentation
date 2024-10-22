@@ -1,0 +1,28 @@
+{
+  "id": "Introduction/Overview",
+  "title": "Overview of the Harmonisation Pipeline",
+  "description": "The gwas-sumstats-harmoniser  is a pipeline designed to standardise variant data across different genome assemblies, ensuring consistency for downstream analysis. This process involves four key steps:",
+  "source": "@site/docs/Introduction/Overview.md",
+  "sourceDirName": "Introduction",
+  "slug": "/",
+  "permalink": "/gwas_harmoniser_documentation/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/EBISPOT/gwas-sumstats-harmoniser-documentation/tree/main/docs/Introduction/Overview.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "slug": "/",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/gwas_harmoniser_documentation/category/introduction"
+  },
+  "next": {
+    "title": "Genome Build Mapping",
+    "permalink": "/gwas_harmoniser_documentation/Introduction/Genome-Build-Mapping"
+  }
+}

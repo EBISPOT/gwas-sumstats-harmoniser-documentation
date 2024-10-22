@@ -1,0 +1,27 @@
+{
+  "id": "Introduction/Genome-Build-Mapping",
+  "title": "Genome Build Mapping",
+  "description": "The first step in harmonizing variant data is updating the genomic coordinates to the desired assembly (GRCh38). The pipeline follows a systematic approach to ensure high-confidence mapping of each variant's position:",
+  "source": "@site/docs/Introduction/Genome-Build-Mapping.md",
+  "sourceDirName": "Introduction",
+  "slug": "/Introduction/Genome-Build-Mapping",
+  "permalink": "/gwas_harmoniser_documentation/Introduction/Genome-Build-Mapping",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/EBISPOT/gwas-sumstats-harmoniser-documentation/tree/main/docs/Introduction/Genome-Build-Mapping.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Overview of the Harmonisation Pipeline",
+    "permalink": "/gwas_harmoniser_documentation/"
+  },
+  "next": {
+    "title": "Orientation of palindromic variants",
+    "permalink": "/gwas_harmoniser_documentation/Introduction/Orientation-of-palindromic-variants"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "Introduction/Quality-control",
+  "title": "Quality control",
+  "description": "To ensure that only complete and reliable records are retained in the harmonised result, the final step of the pipeline is quality control (QC). The QC process involves filtering out variants that lack valid values for the following fields:",
+  "source": "@site/docs/Introduction/Quality-control.md",
+  "sourceDirName": "Introduction",
+  "slug": "/Introduction/Quality-control",
+  "permalink": "/gwas_harmoniser_documentation/Introduction/Quality-control",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/EBISPOT/gwas-sumstats-harmoniser-documentation/tree/main/docs/Introduction/Quality-control.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Harmonising the variants",
+    "permalink": "/gwas_harmoniser_documentation/Introduction/Harmonising-the-variants"
+  },
+  "next": {
+    "title": "Tutorial",
+    "permalink": "/gwas_harmoniser_documentation/category/tutorial"
+  }
+}
