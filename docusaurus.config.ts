@@ -112,6 +112,15 @@ const config: Config = {
       style: 'dark',
       links: [
         {
+          title: 'Docs',
+          items: [
+            {
+              label: 'Tutorial',
+              to: '/docs/intro',
+            },
+          ],
+        },
+        {
           title: 'Community',
           items: [
             {
@@ -129,7 +138,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/EBISPOT/gwas-sumstats-harmoniser',
+              href: 'https://github.com/facebook/docusaurus',
             },
           ],
         },
