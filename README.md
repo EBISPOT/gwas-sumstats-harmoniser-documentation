@@ -17,7 +17,7 @@ This online documentation for the **GWAS Catalog Harmonisation Pipeline**([gwas-
 
 The `npm run start` (or `yarn start`, `pnpm run start`) command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
 
-## Previewing the Website Locally
+## GitHub Pages Deployment
 ### Github Action
 This repository uses GitHub Actions, specifically the `action/upload-pages-artifact`, to automatically deploy the website to GitHub Pages whenever updates are pushed to the master branch.
 
@@ -27,6 +27,6 @@ To set up deployment, we followed the [Docusaurus-deploying-to-github-pages](htt
 Navigate to Settings -> Pages -> Build and Deployment -> Source -> GitHub Actions. Here you can check the workflow run details.
 
 ## Structure
-1. All documentations markdown files are under the folder of `/docs` (more details: [docusaurus-Docs]https://docusaurus.io/docs/create-doc)
-2. All blog markdown files are udner the folder of `/blog` (more details: [docusaurus-Blog]https://docusaurus.io/docs/blog)
+1. All documentations markdown files are under the folder of `/docs` (more details: [docusaurus-Docs](https://docusaurus.io/docs/create-doc))
+2. All blog markdown files are udner the folder of `/blog` (more details: [docusaurus-Blog](https://docusaurus.io/docs/blog))
 3. `docusaurus.config.tc` file contains key configurations for your Docusaurus site and is located in the root directory. This file allows you to customize various aspects of your site, including icons, navigation bar, website name, URL, github link, theme and footer.
