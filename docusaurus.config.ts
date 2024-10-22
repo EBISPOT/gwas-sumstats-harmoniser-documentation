@@ -116,7 +116,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/Introduction/Overview',
+              to: '/docs/Introduction/Overview.md',
             },
           ],
         },
@@ -138,7 +138,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/EBISPOT/gwas-sumstats-harmoniser',
             },
           ],
         },
