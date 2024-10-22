@@ -29,9 +29,10 @@ The pipeline requires a tab-separated values (TSV) file with a standardised head
 * other allele: The non-effect allele.
 * p-value: The statistical significance of the variant.
 
-This is the minimum requirement to run the pipeline. However, if you have beta, odds ratio, Z-score or effect_allele_frequency, you have also give them standard headers to make sure they can be recognise correctly by the pipeline to be harmonised. Please refer to [GWAS Catalog webiste](https://www.ebi.ac.uk/gwas/docs/summary-statistics-format) for more inforation about standard headers.
+This is the minimum requirement to run the pipeline. However, if you have beta, 	
+odds_ratio, z-score or effect_allele_frequency, you have also give them standard headers to make sure they can be recognise correctly by the pipeline to be harmonised. Please refer to [GWAS Catalog webiste](https://www.ebi.ac.uk/gwas/docs/summary-statistics-format) for more inforation about standard headers.
 
-For missing value, the input TSV file is processed using pandas. This means that missing values in other columns (outside of the required fields) are handled according to pandas' default settings and will not cause errors during processing. Ensure that required columns do not have missing values, while non-required fields with pandas-recognised missing value markers (e.g., NA, NaN, None) will be processed without issue.
+Ensure that required columns do not have missing values, while non-required fields with pandas-recognised missing value markers (e.g., NA, NaN, None) will be processed without issue.
 
 <details>
     <summary>Sumstat inpus file example: <code>gwas_sumstat_name.tsv</code></summary>
@@ -44,11 +45,11 @@ For missing value, the input TSV file is processed using pandas. This means that
     ```
 </details>
 #### Prepareing the sumstats data:
-The process for preparing your input data depends on the number of summary statistics (sumstats) files you need to harmonize and the level of modifications required.
+The process for preparing your input data depends on the number of summary statistics (sumstats) files you need to harmonise and the level of modifications required.
 
-* For a few sumstats in TSV format with minimal changes: You can manually edit the column headers using a text editor like vi. For example: `vi sumstat.tsv`
+* For a few sumstats in TSV format with minimal changes: You can manually edit the column headers using a text editor like `vi`. For example: `vi sumstat.tsv`
 
-* For a few sumstats requiring significant modifications: We recommend using our online formatter tool, [`SSF-morph`](https://ebispot.github.io/gwas-sumstats-tools-ssf-morph/),to prepare your input files. This tool simplifies the reformatting process and ensures compatibility with the pipeline.
+* For a few sumstats requiring significant modifications: We recommend using our online formatter tool, [`SSF-morph`](https://ebispot.github.io/gwas-sumstats-tools-ssf-morph/), to prepare your input files. This tool simplifies the reformatting process and ensures compatibility with the pipeline.
 
 * For a large number of sumstats already in TSV format: You can customize the header recognition directly in the pipeline code. This allows you to quickly adapt the pipeline to recognize different header formats without manually editing each file.
 

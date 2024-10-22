@@ -1,19 +1,14 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+Sumstats:
+  label: Sumstata
+  permalink: /Sumstats
+  description: GWAS summary statistic data
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+Harmonisation:
+  label: Harmonisation
+  permalink: /Harmonisation
+  description: Harmonisation
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+GWAS Catalog:
+  label: GWASCatalog
+  permalink: /GWAS-Catalog
+  description: GWAS Catalog

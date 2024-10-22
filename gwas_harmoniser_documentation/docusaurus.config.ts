@@ -7,7 +7,7 @@ import rehypeKatex from 'rehype-katex';
 const config: Config = {
   title: 'gwas-sumstats-harmoniser',
   tagline: 'A tool to standardise variant data',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/GWAS_Catalog_banner_logo_34x40.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -17,8 +17,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'EBISPOT', // Usually your GitHub org/user name.
+  projectName: 'gwas-sumstats-harmoniser', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -36,11 +36,13 @@ const config: Config = {
       'classic',
       {
         docs: {
+          routeBasePath: '/',
           sidebarPath: './sidebars.ts',
+          sidebarCollapsed: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/EBISPOT/gwas-sumstats-harmoniser-documentation',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
@@ -53,7 +55,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/EBISPOT/gwas-sumstats-harmoniser-documentation',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -78,12 +80,18 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/GWAS_Catalog_banner_logo_34x40.png',
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: false,
+      },
+    },
     navbar: {
       title: 'gwas-sumstats-harmoniser',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Gwas Catalog logo',
+        src: 'img/GWAS_Catalog_banner_logo_34x40.png',
       },
       items: [
         {
@@ -116,16 +124,8 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'GWAS Catalog',
+              href: 'https://www.ebi.ac.uk/gwas/home',
             },
           ],
         },
@@ -143,7 +143,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} | EMBL-EBI is an Outstation of the <a href="https://www.embl.org/"> European Molecular Biology Laboratory</a>| <a href="https://www.ebi.ac.uk/about/terms-of-use">Terms of use</a> | <a href="https://www.ebi.ac.uk/long-term-data-preservation"> Data Preservation Statement </a>`,
     },
     prism: {
       theme: prismThemes.github,

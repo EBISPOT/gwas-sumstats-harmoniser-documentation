@@ -12,11 +12,14 @@ The pipeline uses the following method to infer the orientation of palindromic v
 * First, 10% of non-palindromic sites are randomly selected. For these sites, the alleles (both effect and other alleles) are compared with the reference and alternative alleles in the Ensembl VCF reference. This comparison helps determine whether the variants align with the forward strand (same as the reference) or the reverse strand (reverse complement of the reference).
 
 ### Step 2: Calculating strand consensus
-* Based on this comparison, the forward strand consensus rate is calculated as either: forward/(forward + reverse), or reverse/(forward + reverse).
+* Based on this comparison, the strand consensus rate is calculated as either:     
+   * `forward/(forward + reverse)`, or 
+   * `reverse/(forward + reverse)`.
+
+   This rate reflects the proportion of variants aligning to the forward strand or (reverse strand).
 
 ### Step 3: Inferring the strand of palindromic variants
-* This rate indicates how often the variants align to the forward strand, providing a basis for inference about palindromic variant orientation. To minimize sampling bias, the following thresholds are applied:
-
+The consensus rate is then used to infer the orientation of palindromic variants. To minimize sampling bias and ensure accurate orientation, the pipeline applies the following thresholds:
   - If the consensus rate is ≥ 0.995
     - The palindromic variants are inferred to be aligned on the forward (or reverse) strand. The harmonisation proceeds accordingly for these variants.
   - If the consensus rate is between 0.995 and 0.9 

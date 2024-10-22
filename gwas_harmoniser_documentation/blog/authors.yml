@@ -1,23 +1,33 @@
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+yueji:
+  name: Yue Ji
+  title: Bioinformatican @ EMBL-EBI
+  url: https://github.com/jiyue1214
+  image_url: https://github.com/jiyue1214.png
   page: true
   socials:
-    x: yangshunz
-    github: yangshun
+    github: jiyue1214
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
-  page:
-    # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
+karatug:
+  name: Karatuğ Ozan Bircan
+  title: Bioinformatican @ EMBL-EBI
+  url: https://github.com/karatugo
+  image_url: https://github.com/karatugo.png
   socials:
-    x: sebastienlorber
-    linkedin: sebastienlorber
-    github: slorber
-    newsletter: https://thisweekinreact.com
+    github: karatugo
+
+Lizzy:
+  name: Elizabeth Lewis
+  title: Scientific Curator @ EMBL-EBI
+  url: https://github.com/earlEBI
+  image_url: https://github.com/earlEBI.png
+  socials:
+    github: earlEBI
+
+Laura:
+  name: Laura Harris
+  title: GWAS Catalog Coordinator @ EMBL-EBI
+  url: https://github.com/ljwh2
+  image_url: https://github.com/ljwh2.png
+  socials:
+    github: ljwh2
+

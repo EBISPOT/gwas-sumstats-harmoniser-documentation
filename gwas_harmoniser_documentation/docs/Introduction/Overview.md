@@ -1,4 +1,5 @@
 ---
+slug: /
 sidebar_position: 1
 ---
 
@@ -14,4 +15,4 @@ The `gwas-sumstats-harmoniser`  is a pipeline designed to standardise variant da
 
 4. Quality control: Removing variants that containing missing value in essential columns (chromosome, base pair location, or p-value).
 
-![nextflow workflow](../img/Harmonisation.jpg)
+![nextflow workflow](../img/Harmonisation.png)

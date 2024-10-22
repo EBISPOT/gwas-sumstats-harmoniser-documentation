@@ -11,7 +11,7 @@ The [`start_harmonisation.sh`](./Running-the-Pipeline.md) script demonstrates ho
 
 #### Preparing the list file
 
-You can use a text file containing the full path of each summary statistics file as input for the `--list`. For example, in the file `to_harmonise_files_list.txt`, each line should include the full path to a summary statistics file. The pipeline will automatically locate the corresponding YAML file in the same directory (e.g., `full_path_to_gwas_sumstat_1-meta.yaml`).
+You can use a text file containing the full path of each summary statistics file as input for the `--list`. For example, in the file `to_harmonise_files_list.txt`, each line should include the full path to a summary statistics file. The pipeline will automatically find the corresponding YAML file in the same directory (e.g., `full_path_to_gwas_sumstat_1-meta.yaml`).
 
 ```text title="Example of to_harmonise_files_list.txt"
 full_path_to_gwas_sumstat_1
@@ -27,7 +27,7 @@ To harmonise all files listed in a provided `to_harmonise_files_list.txt`, you c
 ```bash
 nextflow run  EBISPOT/gwas-sumstats-harmoniser \
 --ref 'full path to store reference' \
---version v1.1.9 \
+--version $version \
 --harm \
 --list to_harmonise_files_list.txt \
 -with-trace \
@@ -40,8 +40,7 @@ The option `--all_harm_folder` will automatically harmonise all files in the `al
 
 ```bash
 nextflow run EBISPOT/gwas-sumstats-harmoniser \
--r $version \
---version v1.1.9 \
+--version $version \
 --ref $ref \
 --all_harm_folder $all_harm_folder \
 -with-trace \

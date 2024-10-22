@@ -15,11 +15,13 @@ Below is an example of how to run the pipeline using SLURM for job scheduling:
 
 # Define the reference path
 ref_path="full path to store reference"
+verision='v1.1.9'
 
 # Harmonising single sumstat using Singularity
 nextflow run  EBISPOT/gwas-sumstats-harmoniser \
+-r $version \
+--version $version \
 --ref $ref_path \
---version 'v1.1.9' \
 --harm \
 --file Full_path_of_the_file_to_be_harmonised
 -profile cluster,singularity
@@ -27,6 +29,8 @@ nextflow run  EBISPOT/gwas-sumstats-harmoniser \
 Parameters Explained:
 | Parameter         | Description                                                                                                   |
 |-------------------|---------------------------------------------------------------------------------------------------------------|
+| `-r`           | Revision of the project to inspect (either a git branch, tag or commit SHA number).                                                         |
+| `--version`           | This a parameter that will record the version of the pipeline in the final `runnning.log` file                                                         |
 | `--ref`           | Specifies the path where reference files are stored.                                                         |
 | `--harm`          | Executes the harmonization model to harmonize the summary statistics based on the reference.                 |
 | `--file`          | Specifies the full path of the summary statistics file to be harmonized.                                     |
