@@ -10,15 +10,15 @@ const config: Config = {
   favicon: 'img/GWAS_Catalog_banner_logo_34x40.png',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://ebispot.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/gwas_harmoniser_documentation/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'EBISPOT', // Usually your GitHub org/user name.
-  projectName: 'gwas-sumstats-harmoniser', // Usually your repo name.
+  projectName: 'gwas_harmoniser_documentation', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -42,7 +42,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/EBISPOT/gwas-sumstats-harmoniser-documentation',
+            'https://github.com/EBISPOT/gwas-sumstats-harmoniser-documentation/tree/main/',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
@@ -55,7 +55,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/EBISPOT/gwas-sumstats-harmoniser-documentation',
+            'https://github.com/EBISPOT/gwas-sumstats-harmoniser-documentation/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
