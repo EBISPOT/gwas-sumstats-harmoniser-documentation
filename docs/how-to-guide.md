@@ -12,7 +12,7 @@ sidebar_position: 4
 
 ## Running the pipeline
 * [How do I handle large-scale datasets with the pipeline?](./Tutorials/Running-the-Pipeline-batch)
-* [If I run multiple files in one job, how can I monitor the progress for each individual sumstat?](Tutorials/Running-the-Pipeline-batch#handling-multiple-files-in-one-job)
+* [If I run multiple files in one job, how can I monitor the progress for each individual sumstat?](./Tutorials/Running-the-Pipeline-batch#handling-multiple-files-in-one-job)
 
 ## Running environment
 * [How can I run the pipeline on an HPC system?](./Tutorials/Preparing-the-Executor)
