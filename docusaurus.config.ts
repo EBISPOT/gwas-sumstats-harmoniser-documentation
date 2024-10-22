@@ -13,12 +13,12 @@ const config: Config = {
   url: 'https://ebispot.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/gwas_harmoniser_documentation/',
+  baseUrl: '/gwas-sumstats-harmoniser-documentation/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'EBISPOT', // Usually your GitHub org/user name.
-  projectName: 'gwas_harmoniser_documentation', // Usually your repo name.
+  projectName: 'gwas-sumstats-harmoniser-documentation', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -129,7 +129,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/EBISPOT/gwas-sumstats-harmoniser',
             },
           ],
         },
