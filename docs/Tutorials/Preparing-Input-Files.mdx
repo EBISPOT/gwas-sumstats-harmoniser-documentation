@@ -44,7 +44,7 @@ Ensure that required columns do not have missing values, while non-required fiel
     22          16052961            T              C             0.77     NA           
     ```
 </details>
-#### Prepareing the sumstats data:
+#### Preparing the sumstats data:
 The process for preparing your input data depends on the number of summary statistics (sumstats) files you need to harmonise and the level of modifications required.
 
 * For a few sumstats in TSV format with minimal changes: You can manually edit the column headers using a text editor like `vi`. For example: `vi sumstat.tsv`
@@ -94,7 +94,7 @@ The pipeline requires a YAML file for each sumstat, containing essential metadat
 
 While all fields in the YAML file are required for the pipeline to run, **only** the <Highlight color="#25c2a0"> genome_assembly</Highlight> and <Highlight color="#25c2a0">coordinate_system</Highlight> fields must be accurate for proper harmonisation.
 
-#### Prepareing the YAML data:
+#### Preparing the YAML data:
 You can copy the example YAML file below to create your own. Make sure to adjust the `genome_assembly` and `coordinate_system` fields based on your dataset.
 * The default value for `coordinate_system` is `1-based`.
 * There is **no default** value for `genome_assembly`, so you must specify it according to your data.

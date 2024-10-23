@@ -5,9 +5,9 @@ sidebar_position: 4
 
 ## Data Preparation
 * [How can I use my own customized reference files?](./Tutorials/Preparing-Reference-Files#prepare-your-reference-files)
-* [How do I convert my input file to an eligible input format that the pipeline can recognize?](./Tutorials/Preparing-Input-Files#prepareing-the-sumstats-data)
-* [How do I customize the code to recognize headers in my file?](./Tutorials/Preparing-Input-Files#prepareing-the-sumstats-data)
-* [How do I generate a YAML file for input files?](./Tutorials/Preparing-Input-Files#prepareing-the-yaml-data)
+* [How do I convert my input file to an eligible input format that the pipeline can recognize?](./Tutorials/Preparing-Input-Files#preparing-the-sumstats-data)
+* [How do I customize the code to recognize headers in my file?](./Tutorials/Preparing-Input-Files#preparing-the-sumstats-data)
+* [How do I generate a YAML file for input files?](./Tutorials/Preparing-Input-Files#preparing-the-yaml-data)
 
 
 ## Running the pipeline
