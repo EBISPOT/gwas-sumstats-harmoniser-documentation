@@ -29,7 +29,7 @@ sidebar_position: 2
   data_file_md5sum: 0e6ae204cb1ac0198d947b004e78e080
   data_file_name: random_name.h.tsv.gz
   date_metadata_last_modified: 2024-10-18
-  file_type: GWAS-SSF v0.1
+  file_type: GWAS-SSF v1.0
   genome_assembly: GRCh38
   harmonisation_reference: ftp://ftp.ensembl.org/pub/release-95/fasta/homo_sapiens/dna/
   is_harmonised: true

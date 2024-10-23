@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-# Getting Start
+# Getting Started
 
 ## Install necessary dependencies
 
