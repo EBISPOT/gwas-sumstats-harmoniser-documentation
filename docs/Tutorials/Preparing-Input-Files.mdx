@@ -29,8 +29,7 @@ The pipeline requires a tab-separated values (TSV) file with a standardised head
 * other allele: The non-effect allele.
 * p-value: The statistical significance of the variant.
 
-This is the minimum requirement to run the pipeline. However, if you have beta, 	
-odds_ratio, hazard_ratio, z_score or effect_allele_frequency, you should also give them standard headers to make sure they can be recognised by the pipeline. Please refer to [GWAS Catalog website](https://www.ebi.ac.uk/gwas/docs/summary-statistics-format) for more information about standard headers.
+This is the minimum requirement to run the pipeline. However, if you have beta, odds_ratio, hazard_ratio, z_score or effect_allele_frequency, these should also be given as standard headers to ensure they are recognised by the pipeline. Please refer to [GWAS Catalog website](https://www.ebi.ac.uk/gwas/docs/summary-statistics-format) for more information about standard headers.
 
 Ensure that required columns do not have missing values, while non-required fields with pandas-recognised missing value markers (e.g., NA, NaN, None) will be processed without issue.
 
