@@ -29,13 +29,12 @@ The pipeline requires a tab-separated values (TSV) file with a standardised head
 * other allele: The non-effect allele.
 * p-value: The statistical significance of the variant.
 
-This is the minimum requirement to run the pipeline. However, if you have beta, 	
-odds_ratio, z-score or effect_allele_frequency, you have also give them standard headers to make sure they can be recognise correctly by the pipeline to be harmonised. Please refer to [GWAS Catalog webiste](https://www.ebi.ac.uk/gwas/docs/summary-statistics-format) for more inforation about standard headers.
+This is the minimum requirement to run the pipeline. However, if you have beta, odds_ratio, hazard_ratio, z_score or effect_allele_frequency, these should also be given as standard headers to ensure they are recognised by the pipeline. Please refer to [GWAS Catalog website](https://www.ebi.ac.uk/gwas/docs/summary-statistics-format) for more information about standard headers.
 
 Ensure that required columns do not have missing values, while non-required fields with pandas-recognised missing value markers (e.g., NA, NaN, None) will be processed without issue.
 
 <details>
-    <summary>Sumstat inpus file example: <code>gwas_sumstat_name.tsv</code></summary>
+    <summary>Sumstats input file example: <code>gwas_sumstat_name.tsv</code></summary>
     ```tsv
     chromosome  base_pair_location  effect_allele  other_allele  p_value  rsid         
     1           693730              A              G             0.1      NA           
@@ -51,7 +50,7 @@ The process for preparing your input data depends on the number of summary stati
 
 * For a few sumstats requiring significant modifications: We recommend using our online formatter tool, [`SSF-morph`](https://ebispot.github.io/gwas-sumstats-tools-ssf-morph/), to prepare your input files. This tool simplifies the reformatting process and ensures compatibility with the pipeline.
 
-* For a large number of sumstats already in TSV format: You can customize the header recognition directly in the pipeline code. This allows you to quickly adapt the pipeline to recognize different header formats without manually editing each file.
+* For a large number of sumstats already in TSV format: You can customize the header recognition directly in the pipeline code. This allows you to quickly adapt the pipeline to recognise different header formats without manually editing each file.
 
 <details>
     <summary>Customise your header recognition</summary>
@@ -72,7 +71,7 @@ The process for preparing your input data depends on the number of summary stati
 The pipeline requires a YAML file for each sumstat, containing essential metadata. 
 
 <details>
-    <summary>YAML inpus file example: <code>gwas_sumstat_name.tsv-meta.yaml</code></summary>
+    <summary>YAML input file example: <code>gwas_sumstat_name.tsv-meta.yaml</code></summary>
     ```YAML
     # Study meta-data
     date_metadata_last_modified: 2023-02-09
@@ -95,6 +94,6 @@ The pipeline requires a YAML file for each sumstat, containing essential metadat
 While all fields in the YAML file are required for the pipeline to run, **only** the <Highlight color="#25c2a0"> genome_assembly</Highlight> and <Highlight color="#25c2a0">coordinate_system</Highlight> fields must be accurate for proper harmonisation.
 
 #### Preparing the YAML data:
-You can copy the example YAML file below to create your own. Make sure to adjust the `genome_assembly` and `coordinate_system` fields based on your dataset.
+You can copy the example YAML file above to create your own. Make sure to adjust the `genome_assembly` and `coordinate_system` fields based on your dataset.
 * The default value for `coordinate_system` is `1-based`.
 * There is **no default** value for `genome_assembly`, so you must specify it according to your data.

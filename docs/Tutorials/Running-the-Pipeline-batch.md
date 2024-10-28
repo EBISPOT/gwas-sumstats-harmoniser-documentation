@@ -7,7 +7,7 @@ ___
 
 The [`start_harmonisation.sh`](./Running-the-Pipeline.md) script demonstrates how to run the harmonisation pipeline for a single summary statistics file. If you need to harmonise a large number of files, you can either run each sumstat as an independent Nextflow job using a loop, use the option `--list` to harmonise all files listed in a text file, or use the `--gwascatalog` option to harmonise all files in a folder.
 
-## Harmonizing files from a List
+## Harmonising files from a List
 
 #### Preparing the list file
 
@@ -34,7 +34,7 @@ nextflow run  EBISPOT/gwas-sumstats-harmoniser \
 -profile cluster,singularity \
 ```
 
-## Harmonizing files from a folder
+## Harmonising files from a folder
 
 The option `--all_harm_folder` will automatically harmonise all files in the `all_harm_folder` folder. 
 
@@ -55,12 +55,12 @@ When running multiple files in one Nextflow job, the pipeline is designed to ign
    | 1       | a5/4abfe2| 23589     | NFCORE_GWASCATALOGHARM:GWASCATALOGHARM:major_direction:map_to_build (random_name) | COMPLETED | 0    | 2024-10-18 17:11:27.279| 5.8s     | 4.7s     | 37.1% | 131.5 MB  | 593.1 MB  | 11.7 MB | 1.6 KB |
    | 2       | 51/6248c5| 24169     | NFCORE_GWASCATALOGHARM:GWASCATALOGHARM:major_direction:ten_percent_counts (random_name_chr22)         | COMPLETED | 0    | 2024-10-18 17:11:33.282| 4.2s     | 3.5s     | 43.2% | 111.1 MB  | 668.3 MB  | 20.7 MB | 1.2 KB |
    
-   Each row in the table represents a single process executed on a specific summary statistics (sumstat) file. The `name` column provides details about the specific **process** and the **sumstat** being processed, allowing you to track the progress and performance of each step in the harmonization workflow for individual sumstat files.
+   Each row in the table represents a single process executed on a specific summary statistics (sumstat) file. The `name` column provides details about the specific **process** and the **sumstat** being processed, allowing you to track the progress and performance of each step in the harmonisation workflow for individual sumstat files.
 
    For more information, please refer to [nextflow documentation](https://www.nextflow.io/docs/latest/reports.html#trace-file) for more details.
 
    <details>
-      <summary> please click here to see an exmaple of a full table for one sumstat</summary>
+      <summary> please click here to see an example of a full table for one sumstat</summary>
       | task_id | hash     | native_id | name                                                                            | status    | exit | submit                 | duration | realtime | %cpu  | peak_rss  | peak_vmem | rchar   | wchar  |
       |---------|----------|-----------|---------------------------------------------------------------------------------|-----------|------|------------------------|----------|----------|-------|-----------|-----------|---------|--------|
       | 1       | a5/4abfe2| 23589     | NFCORE_GWASCATALOGHARM:GWASCATALOGHARM:major_direction:map_to_build (random_name) | COMPLETED | 0    | 2024-10-18 17:11:27.279| 5.8s     | 4.7s     | 37.1% | 131.5 MB  | 593.1 MB  | 11.7 MB | 1.6 KB |

@@ -10,7 +10,7 @@ sidebar_position: 2
 
 ## Sumstat formatting tools
 1. [UI formatting tool: SSF-morph](https://ebispot.github.io/gwas-sumstats-tools-ssf-morph/)
-2. [CLI formatting tool: gwas-sumstats-tools](https://github.com/EBISPOT/gwas-sumstats-tools-ssf-morph)
+2. [CLI formatting tool: gwas-sumstats-tools](https://github.com/EBISPOT/gwas-sumstats-tools)
 
 ## Nextflow documentation:
 1. [Nextflow documentation](https://www.nextflow.io/docs/latest/index.html)

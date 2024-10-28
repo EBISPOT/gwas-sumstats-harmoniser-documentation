@@ -9,7 +9,7 @@ sidebar_position: 1
 | lo    | liftover base pair location to the target genome build (GRCh 38)              |
 
 `hm_code`
-| Code | Description of Harmonization Process                                      |
+| Code | Description of Harmonisation Process                                      |
 |------|-------------------------------------------------------------------------|
 | 1    | Palindromic; Infer strand; Forward strand; Alleles correct              |
 | 2    | Palindromic; Infer strand; Forward strand; Flipped alleles              |

@@ -16,7 +16,7 @@ The pipeline uses the following method to infer the orientation of palindromic v
    * `forward/(forward + reverse)`, or 
    * `reverse/(forward + reverse)`.
 
-   This rate reflects the proportion of variants aligning to the forward strand or (reverse strand).
+   This rate reflects the proportion of variants aligning to the forward strand (or reverse strand).
 
 ### Step 3: Inferring the strand of palindromic variants
 The consensus rate is then used to infer the orientation of palindromic variants. To minimize sampling bias and ensure accurate orientation, the pipeline applies the following thresholds:

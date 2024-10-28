@@ -14,7 +14,7 @@ To configure the pipeline to run with the LSF executor, update the `process.exec
         process.time = '2d'
     }
 ```
-For running the pipeline with other supported executors such as `PBS`, `k8s`, `AWS Batch`,`Google Cloud Batch` etc. that nextflow currently support, please refer to the [Nextflow documentation](https://www.nextflow.io/docs/latest/executor.html#lsf) for detailed instructions on configuring the desired execution environment.
+For running the pipeline with other supported executors such as `PBS`, `k8s`, `AWS Batch`,`Google Cloud Batch` that Nextflow currently supports, please refer to the [Nextflow documentation](https://www.nextflow.io/docs/latest/executor.html#lsf) for detailed instructions on configuring the desired execution environment.
 
 # Resource requirement:
 * **Test Mode**: The pipeline's test mode requires as little as 3G of memory, making it ideal for running on your local computer to validate the setup or debug issues.
