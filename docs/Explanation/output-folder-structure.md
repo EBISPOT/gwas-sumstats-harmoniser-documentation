@@ -13,12 +13,12 @@ sidebar_position: 2
   | 22         | 15925047            | A              | G             | -0.00477642 | 0.0164749      | 0.089851                | 0.77    | rs376238049   | ref_rs376238049     | 0.02   | lo                      | 0.03       | 12      | 22_15925047_G_A     |
 
 </details>
-* The harmonized result file represents the harmonised [mandatory columns](https://www.ebi.ac.uk/gwas/docs/summary-statistics-format) in a specific order, followed by the remaining columns from the original file in their original order.
-* All values in this file reflect the harmonized results.
+* The harmonised result file represents the harmonised [mandatory columns](https://www.ebi.ac.uk/gwas/docs/summary-statistics-format) in a specific order, followed by the remaining columns from the original file in their original order.
+* All values in this file reflect the harmonised results.
 * All the variants in this file are sorted by chr and position and compressed using bgzip
 * In addition to the columns from the original file, two extra columns are included:
   * `hm_coordinate_conversion` Describes how this variant was mapped to the target genome.
-  * `harmonisation code` A code assigned to each record indicating the harmonization process that was applied.
+  * `harmonisation code` A code assigned to each record indicating the harmonisation process that was applied.
   * Please refer to this [page](../Reference-guide/Hm_code.md) for more detailed information.
 
 ### YAML file for harmonised sumstat
@@ -36,15 +36,15 @@ sidebar_position: 2
   is_sorted: true
   ```
 </details>
-This YAML file provides metadata about the harmonized result, including:
+This YAML file provides metadata about the harmonised result, including:
 
-* Whether the file is harmonized and sorted
-* The reference used for harmonization
+* Whether the file is harmonised and sorted
+* The reference used for harmonisation
 * The current genome build and coordinate system
 * The md5sum for file integrity verification
 
-### Tabix file for final harmonised sumstst
-A tabix index file of the harmonisation result for quick data retrieve purposes
+### Tabix file for final harmonised sumstat
+A tabix index file of the harmonisation result for quick data retrieval purposes
 
 ### Running log summary the whole harmonisation process
 <details>
@@ -140,17 +140,17 @@ Result	SUCCESS_HARMONIZATION
 
   ```
 </details>
-The running log file provides detailed information about the harmonization process, including:
+The running log file provides detailed information about the harmonisation process, including:
 
-* The pipeline version and the date of harmonization
+* The pipeline version and the date of harmonisation
 * The reference VCF file and dbSNP version used
 * A summary of the genome build mapping results, reporting the number and percentage of variants dropped during this step
 * The orientation inferred for palindromic variants and the strand consensus ratio
-* The number and percentage of variants successfully harmonized for each `hm_code`
-* The number and percentage of variants that failed to be harmonized for each `hm_code`
+* The number and percentage of variants successfully harmonised for each `hm_code`
+* The number and percentage of variants that failed to be harmonised for each `hm_code`
 
 :::info[Harmonised result before April 2023]
-Starting in April 2023, with the release of the GWAS-SSF standard by the GWAS-Catalog, we began retaining only the harmonized results in the final `*.h.tsv` file to ensure consistency with the input file and reduce redundancy. 
+Starting in April 2023, with the release of the GWAS-SSF standard by the GWAS-Catalog, we began retaining only the harmonised results in the final `*.h.tsv` file to ensure consistency with the input file and reduce redundancy. 
 
-For files harmonized before this date, you will see two outputs for each summary statistic: one harmonized result (`*.h.tsv.gz`) and one YAML file (`*.h.tsv.gz-meta.yaml`). The harmonization process remains the same, but there is a slight difference in how data is represented in the `*.h.tsv.gz`. In these older harmonized files, the harmonized values are listed in columns starting with `hm_`, such as `hm_chromosome`.
+For files harmonised before this date, you will see two outputs for each summary statistic: one harmonised result (`*.h.tsv.gz`) and one YAML file (`*.h.tsv.gz-meta.yaml`). The harmonisation process remains the same, but there is a slight difference in how data is represented in the `*.h.tsv.gz`. In these older harmonised files, the harmonised values are listed in columns starting with `hm_`, such as `hm_chromosome`.
 :::
