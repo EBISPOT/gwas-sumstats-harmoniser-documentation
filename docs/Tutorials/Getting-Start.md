@@ -67,31 +67,32 @@ conda 23.11.0
 ## Run your first harmonisation pipeline
 To run your first harmonization pipeline, execute the following command:
 ``` bash
-nextflow run  EBISPOT/gwas-sumstats-harmoniser -profile test,singularity
+nextflow run  EBISPOT/gwas-sumstats-harmoniser --version $version -profile test,singularity
 ```
 🚨 If you did not choose to install Singularity, remember to replace `singularity` with `docker` or `conda`.
 
 Once Nextflow starts running:
-1. It will download the `gwas-sumstats-harmoniser` pipeline from Github into the global cache `~/.nextflow/assets`. 
+1. It will download the `gwas-sumstats-harmoniser` pipeline from Github into the global cache `~/.nextflow/assets`. (Please note that in the nextflow, `-r` determines which version of the pipeline to use, while `--version` will only decide what is recorded in the  [`running.log`](../Explanation/output-folder-structure#running-log-summary-the-whole-harmonisation-process) file.)
 2. It will pull the Docker image from [Docker Hub](https://hub.docker.com/r/ebispot/gwas-sumstats-harmoniser) and built Singularity container.
 3. Using the input files `random_name.tsv`,`random_name.tsv-meta.yaml`  along with a small test reference file provided in the ` ~/.nextflow/assets/EBISPOT/gwas-sumstats-harmoniser/test_data`, it will execute the pipeline.
 4. Once the pipeline executes, you can monitor the progress in the terminal, which may look like this:
 ``` bash
  N E X T F L O W   ~  version 24.04.2
 
-Launching `EBISPOT/gwas-sumstats-harmoniser` [goofy_tuckerman] DSL2 - revision: 118e098430
+Launching `https://github.com/EBISPOT/gwas-sumstats-harmoniser` [maniac_mestorf] DSL2 - revision: 67198bb9e7
 
 Harmonizing the file ~/.nextflow/assets/EBISPOT/gwas-sumstats-harmoniser/test_data/random_name.tsv
-executor >  local (9)
-[ec/f4716a] NFC…ATALOGHARM:major_direction:map_to_build (random_name) | 1 of 1 ✔
-[7b/52d159] NFC…HARM:major_direction:ten_percent_counts (random_name) | 2 of 2 ✔
-[9a/a0478c] NFC…:major_direction:ten_percent_counts_sum (random_name) | 1 of 1 ✔
-[-        ] NFC…WASCATALOGHARM:major_direction:generate_strand_counts -
-[-        ] NFC…ASCATALOGHARM:major_direction:summarise_strand_counts -
-[71/6c263a] NFC…GWASCATALOGHARM:main_harm:harmonization (random_name) | 2 of 2 ✔
-[77/e0224e] NFC…OGHARM:main_harm:concatenate_chr_splits (random_name) | 1 of 1 ✔
-[6f/9db381] NFC…HARM:GWASCATALOGHARM:quality_control:qc (random_name) | 1 of 1 ✔
-[c7/5c00d2] NFC…GHARM:quality_control:harmonization_log (random_name) | 1 of 1 ✔
+executor >  local (13)
+[9a/05e067] NFC…ATALOGHARM:major_direction:map_to_build (random_name) | 1 of 1 ✔
+[cc/fef59c] NFC…ajor_direction:ten_percent_counts (random_name_chr22) | 2 of 2 ✔
+[46/626f6f] NFC…:major_direction:ten_percent_counts_sum (random_name) | 1 of 1 ✔
+[1c/b92ff2] NFC…_direction:generate_strand_counts (random_name_chr22) | 2 of 2 ✔
+[b7/3f81cb] NFC…major_direction:summarise_strand_counts (random_name) | 1 of 1 ✔
+[67/216e41] NFC…TALOGHARM:main_harm:harmonization (random_name_chr22) | 2 of 2 ✔
+[a9/336d51] NFC…OGHARM:main_harm:concatenate_chr_splits (random_name) | 1 of 1 ✔
+[64/8a8fec] NFC…HARM:GWASCATALOGHARM:quality_control:qc (random_name) | 1 of 1 ✔
+[6e/fb619c] NFC…GHARM:quality_control:harmonization_log (random_name) | 1 of 1 ✔
+[48/1ae6d4] NFC…OGHARM:quality_control:update_meta_yaml (random_name) | 1 of 1 ✔
 [chr1, chr22,  is being harmonized]
 ```
 
@@ -99,26 +100,28 @@ In your current directory, you will find a folder named `random_name` that conta
 
 ```text
 ./random_name/
-├── 1.merged
-├── 22.merged
-├── final
-│   ├── harmonised.qc.tsv
-│   ├── harmonised.tsv
-│   ├── random_name.h.tsv.gz (Final output)
-│   ├── random_name.h.tsv.gz-meta.yaml (Final output)
-│   ├── random_name.h.tsv.gz.tbi (Final output)
-│   ├── random_name.running.log (Final output)
-│   └── report.txt
-├── harmonization
+├── 1_map_to_build
+│   ├── 1.merged
+│   ├── 22.merged
+│   ├── random_name.tsv-meta.yaml
+│   └── unmapped
+├── 2_ten_sc
+│   ├── ten_percent_chr1.sc
+│   └── ten_percent_chr22.sc
+├── 4_harmonization
 │   ├── chr1.merged.hm
 │   ├── chr1.merged.log.tsv.gz
 │   ├── chr22.merged.hm
 │   └── chr22.merged.log.tsv.gz
-├── random_name.tsv-meta.yaml
-├── ten_percent_total_strand_count.tsv
-├── ten_sc
-│   ├── ten_percent_chr1.sc
-│   └── ten_percent_chr22.sc
-└── unmapped
+├── 5_qc
+│   ├── harmonised.qc.tsv
+│   ├── harmonised.tsv
+│   └── report.txt
+├── final
+│   ├── random_name.h.tsv.gz
+│   ├── random_name.h.tsv.gz-meta.yaml
+│   ├── random_name.h.tsv.gz.tbi
+│   └── random_name.running.log
+└── ten_percent_total_strand_count.tsv
 ```
-This output confirms that the pipeline has successfully executed and is ready to process larger real datasets.
+This output confirms that the pipeline has been successfully executed and is ready to process larger real datasets.
