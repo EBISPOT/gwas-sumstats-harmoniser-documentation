@@ -4,31 +4,32 @@ sidebar_position: 1
 # Output folder structure explanation
 ``` text title="random_name"
 .
-├── 1.merged
-├── ......
-├── 22.merged
+├── 1_map_to_build
+│   ├── 1.merged
+│   ├── ......
+│   ├── 22.merged
+│   ├── random_name.tsv-meta.yaml
+│   └── unmapped
+├── 2_ten_sc
+│   ├── ten_percent_chr1.sc
+│   ├── .......
+│   └── ten_percent_chr22.sc
+├── 4_harmonization
+│   ├── chr1.merged.hm
+│   ├── chr1.merged.log.tsv.gz
+│   ├── .......
+│   ├── chr22.merged.hm
+│   └── chr22.merged.log.tsv.gz
+├── 5_qc
+│   ├── harmonised.qc.tsv
+│   ├── harmonised.tsv
+│   └── report.txt
 ├── final
 │   ├── random_name.h.tsv.gz
 │   ├── random_name.h.tsv.gz-meta.yaml
 │   ├── random_name.h.tsv.gz.tbi
 │   └── random_name.running.log
-├── harmonization
-│   ├── chr1.merged.hm
-│   ├── chr1.merged.log.tsv.gz
-│   ├── ......
-│   ├── chr22.merged.hm
-│   └── chr22.merged.log.tsv.gz
-├── qc
-│   ├── harmonised.qc.tsv
-│   ├── harmonised.tsv
-│   └── report.txt
-├── random_name.tsv-meta.yaml
-├── ten_percent_total_strand_count.tsv
-├── ten_sc
-│   ├── ten_percent_chr1.sc
-│   └── ......
-│   └── ten_percent_chr22.sc
-└── unmapped
+└── ten_percent_total_strand_count.tsv
 ```
 ## Genome Build Mapping outputs
 This step lifts variants to the desired genome assembly (GRCh38) using the process `./modules/local/map_to_build.nf`, generating the following outputs:
