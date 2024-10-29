@@ -67,12 +67,12 @@ conda 23.11.0
 ## Run your first harmonisation pipeline
 To run your first harmonization pipeline, execute the following command:
 ``` bash
-nextflow run  EBISPOT/gwas-sumstats-harmoniser -profile test,singularity
+nextflow run  EBISPOT/gwas-sumstats-harmoniser --version $version -profile test,singularity
 ```
 🚨 If you did not choose to install Singularity, remember to replace `singularity` with `docker` or `conda`.
 
 Once Nextflow starts running:
-1. It will download the `gwas-sumstats-harmoniser` pipeline from Github into the global cache `~/.nextflow/assets`. 
+1. It will download the `gwas-sumstats-harmoniser` pipeline from Github into the global cache `~/.nextflow/assets`. (Please note that in the nextflow, `-r` determines which version of the pipeline to use, while `--version` will only decide what is recorded in the  [`running.log`](../Explanation/output-folder-structure#running-log-summary-the-whole-harmonisation-process) file.)
 2. It will pull the Docker image from [Docker Hub](https://hub.docker.com/r/ebispot/gwas-sumstats-harmoniser) and built Singularity container.
 3. Using the input files `random_name.tsv`,`random_name.tsv-meta.yaml`  along with a small test reference file provided in the ` ~/.nextflow/assets/EBISPOT/gwas-sumstats-harmoniser/test_data`, it will execute the pipeline.
 4. Once the pipeline executes, you can monitor the progress in the terminal, which may look like this:
