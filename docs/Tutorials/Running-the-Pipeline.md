@@ -24,7 +24,7 @@ nextflow run  EBISPOT/gwas-sumstats-harmoniser \
 --ref $ref_path \
 --harm \
 --file Full_path_of_the_file_to_be_harmonised
--profile cluster,singularity
+-profile executor,singularity
 ```
 Parameters Explained:
 | Parameter         | Description                                                                                                   |
