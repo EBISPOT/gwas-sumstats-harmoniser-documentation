@@ -5,7 +5,7 @@ sidebar_position: 6
 # Harmonising a large number of sumstats
 ___
 
-The [`start_harmonisation.sh`](./Running-the-Pipeline.md) script demonstrates how to run the harmonisation pipeline for a single summary statistics file. If you need to harmonise a large number of files, you can either run each sumstat as an independent Nextflow job using a loop, use the option `--list` to harmonise all files listed in a text file, or use the `--gwascatalog` option to harmonise all files in a folder.
+The [`start_harmonisation.sh`](./Running-the-Pipeline.md) script demonstrates how to run the harmonisation pipeline for a single summary statistics file. If you need to harmonise a large number of files, you can either run each sumstat as an independent Nextflow job using a loop, use the option `--harm` and `--list` to harmonise all files listed in a text file, or use the `--gwascatalog` and `--all_harm_folder` option to harmonise all files in a folder.
 
 ## Harmonising files from a List
 
@@ -36,13 +36,17 @@ nextflow run  EBISPOT/gwas-sumstats-harmoniser \
 
 ## Harmonising files from a folder
 
-The option `--all_harm_folder` will automatically harmonise all files in the `all_harm_folder` folder. 
+The `--gwascatalog` model is designed for the daily harmonisation of GWAS Catalog data. It includes an additional step to move the [final results](../Explanation/output-folder-structure.md) to the FTP folder specified by the `--ftp` option. If all variants in a file fail to harmonise, the file will be identified as a "failing harmonisation file," and only the corresponding log file will be moved to the FTP folder.
+
+This model requires input from the `--all_harm_folder` option, which automatically harmonises all files within the specified `all_harm_folder` folder. 
 
 ```bash
 nextflow run EBISPOT/gwas-sumstats-harmoniser \
 --version $version \
 --ref $ref \
+--gwascatalog \
 --all_harm_folder $all_harm_folder \
+--ftp $path_to_store_final_result \
 -with-trace \
 -profile cluster,singularity
 ```
