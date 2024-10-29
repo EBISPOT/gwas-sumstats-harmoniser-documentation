@@ -37,9 +37,9 @@ Parameters Explained:
 | `--chrom`         | Runs the pipeline for a specific chromosome.                                                                  |
 | `--chromlist`     | Runs the pipeline for multiple chromosomes.                                                                   |
 | `--to_build`      | Specifies the target genome build; the default value is "38" (GRCh38).                                      |
-| `--threshold`     | Defines the threshold for strand consensus. Default value is 0.99. For all variants, if either the forward ratio or reverse ratio exceeds **0.99**, palindromic variants will be evaluated as forward (or reverse). |
+| `--threshold`     | Defines the threshold for strand consensus. The default value is 0.99. For all variants, if either the forward ratio or reverse ratio exceeds **0.99**, palindromic variants will be evaluated as forward (or reverse). |
+| `--terminate_error`        | The default error strategy is set to ignore, as the X, Y, and MT chromosomes are often missing if you set running all chromosomes. Alternatively, you can configure the pipeline to terminate immediately if an error occurs.                        |
 | `-profile`        | Instructs Nextflow to run the pipeline in a cluster environment using Singularity.                           |
-
 The pipeline also supports other [Nextflow CLI options](https://www.nextflow.io/docs/latest/reference/cli.html), such as:
 * `-resume`: Executes the script using cached results, allowing you to continue from where the previous execution stopped (e.g., after an error).
 * `-with-trace`: Generates a workflow execution trace file for tracking pipeline performance.
