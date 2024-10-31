@@ -36,7 +36,7 @@ nextflow run  EBISPOT/gwas-sumstats-harmoniser \
 --reference \
 --ref 'full_path_to_save_reference' \
 --remote_vcf_location 'ftp://ftp.ensembl.org/pub/release-109/variation/vcf/homo_sapiens/' \
--profile cluster,conda
+-profile executor,singularity
 ```
 Parameters Explained:
 | **Parameter**            | **Description**                                                                                                                                                        |
