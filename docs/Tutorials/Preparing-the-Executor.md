@@ -8,11 +8,11 @@ Nextflow supports running pipelines on a variety of execution environments, incl
 To configure the pipeline to run with the LSF executor, update the `process.executor` as shown below:
 
 ```groovy title="config/executor.config"
-    cluster {
-        process.executor = 'lsf'
-        process.memory = '28GB'
-        process.time = '2d'
-    }
+process{
+    executor = 'slurm'
+    memory = '28GB'
+    time = '2d'
+}
 ```
 For running the pipeline with other supported executors such as `PBS`, `k8s`, `AWS Batch`,`Google Cloud Batch` that Nextflow currently supports, please refer to the [Nextflow documentation](https://www.nextflow.io/docs/latest/executor.html#lsf) for detailed instructions on configuring the desired execution environment.
 
