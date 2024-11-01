@@ -14,3 +14,9 @@ sidebar_position: 2
 
 ## Nextflow documentation:
 1. [Nextflow documentation](https://www.nextflow.io/docs/latest/index.html)
+
+## Contact US
+We'd love to hear from you!
+1. To provide feedback or ask a question, contact the GWAS Catalog team on gwas-info@ebi.ac.uk.
+2. If you believe you’ve encountered a bug, please don’t hesitate to report it in our [GitHub repository](https://github.com/EBISPOT/gwas-sumstats-harmoniser/issues/new?assignees=&labels=bug&projects=&template=bug_report.yml&title=%5BBug%5D%3A+).
+3. If you encounter any issues while running the pipeline, feel free to join the discussion in the [gwas-sumstats-harmoniser Discussions](https://github.com/EBISPOT/gwas-sumstats-harmoniser/discussions)!
