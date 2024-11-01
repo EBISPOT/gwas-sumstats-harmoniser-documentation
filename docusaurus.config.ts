@@ -134,6 +134,7 @@ const config: Config = {
           ],
         },
       ],
+      copyright: `We'd love to hear from you! To provide feedback or ask a question, contact the GWAS Catalog team on gwas-info@ebi.ac.uk. If you think you've found a bug, please report an issue on our GitHub page.`,
       copyright: `Copyright © ${new Date().getFullYear()} | EMBL-EBI is an Outstation of the <a href="https://www.embl.org/"> European Molecular Biology Laboratory</a>| <a href="https://www.ebi.ac.uk/about/terms-of-use">Terms of use</a> | <a href="https://www.ebi.ac.uk/long-term-data-preservation"> Data Preservation Statement </a>`,
     },
     prism: {
