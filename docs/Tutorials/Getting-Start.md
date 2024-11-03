@@ -43,11 +43,10 @@ mv nextflow ~/bin/
 ```text 
 $ nextflow info
 
-Version: 24.04.2 build 5914
-Created: 29-05-2024 06:19 UTC (07:19 BST)
-System: Linux 4.18.0-513.24.1.el8_9.x86_64
-Runtime: Groovy 4.0.21 on Java HotSpot(TM) 64-Bit Server VM 17.0.4.1+1-LTS-2
-Encoding: UTF-8 (UTF-8)
+Version: 24.10.0 build 5928
+Created: 27-10-2024 18:36 UTC (18:36 BST)
+System: Linux 4.18.0-513.5.1.el8_9.x86_64
+Runtime: Groovy 4.0.23 on Java HotSpot(TM) 64-Bit Server VM 17.0.4.1+1-LTS-2 Encoding: UTF-8 (UTF-8)
 ```
 
 3. Next, install [Singularity](https://docs.sylabs.io/guides/3.0/user-guide/installation.html), [Docker](https://docs.docker.com/engine/install/) or [Anaconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html). Note that using Singularity or Docker is recommended.
