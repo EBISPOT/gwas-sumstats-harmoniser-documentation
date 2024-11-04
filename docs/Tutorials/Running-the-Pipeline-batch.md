@@ -25,7 +25,7 @@ full_path_to_gwas_sumstat_4
 To harmonise all files listed in a provided `to_harmonise_files_list.txt`, you can use the option `--list` to provide the full path of the list. 
 
 ```bash
-nextflow run  EBISPOT/gwas-sumstats-harmoniser \
+nextflow run  EBISPOT/gwas-sumstats-harmoniser -r $version \
 --ref 'full path to store reference' \
 --harm \
 --list to_harmonise_files_list.txt \
@@ -40,7 +40,7 @@ The `--gwascatalog` model is designed for the daily harmonisation of GWAS Catalo
 This model requires input from the `--all_harm_folder` option, which automatically harmonises all files within the specified `all_harm_folder` folder. 
 
 ```bash
-nextflow run EBISPOT/gwas-sumstats-harmoniser \
+nextflow run EBISPOT/gwas-sumstats-harmoniser -r $version \
 --ref $ref \
 --gwascatalog \
 --all_harm_folder $all_harm_folder \
