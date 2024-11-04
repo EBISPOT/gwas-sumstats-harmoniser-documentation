@@ -15,14 +15,14 @@ Running the pipeline requires more than **30 GB** of memory, so we recommend usi
 
 # Define the reference path
 ref_path="full path to store reference"
-verision='v1.1.9'
+version='v1.1.10'
 
 # Harmonising single sumstat using Singularity
 nextflow run  EBISPOT/gwas-sumstats-harmoniser \
 -r $version \
 --ref $ref_path \
 --harm \
---file Full_path_of_the_file_to_be_harmonised
+--file Full_path_of_the_file_to_be_harmonised \
 -profile executor,singularity
 ```
 Parameters Explained:
