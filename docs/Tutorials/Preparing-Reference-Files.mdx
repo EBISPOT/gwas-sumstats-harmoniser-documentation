@@ -34,7 +34,7 @@ If you prefer to use your own VCF files as a reference, we recommend chunking yo
 For example, to use the Ensembl release 109, run the following command:
 
 ``` bash
-nextflow run  EBISPOT/gwas-sumstats-harmoniser \
+nextflow run  EBISPOT/gwas-sumstats-harmoniser -r $version \
 --reference \
 --ref 'full_path_to_save_reference' \
 --remote_vcf_location 'ftp://ftp.ensembl.org/pub/release-109/variation/vcf/homo_sapiens/' \
