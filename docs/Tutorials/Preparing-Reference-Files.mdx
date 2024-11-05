@@ -24,7 +24,7 @@ The current reference files used for harmonisation by the GWAS Catalog are varia
 These files can be directly downloaded from our [FTP](https://ftp.ebi.ac.uk/pub/databases/gwas/harmonisation_resources/) server.
 
 ``` bash
-wget -r https://ftp.ebi.ac.uk/pub/databases/gwas/harmonisation_resources/
+wget -r --no-parent --no-directories --continue ftp://ftp.ebi.ac.uk/pub/databases/gwas/harmonisation_resources/
 ```
 
 ## Prepare your reference files
