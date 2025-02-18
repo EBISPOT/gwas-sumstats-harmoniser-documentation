@@ -1,0 +1,27 @@
+{
+  "id": "Tutorials/Running-the-Pipeline-batch",
+  "title": "Harmonising a large number of sumstats",
+  "description": "_",
+  "source": "@site/docs/Tutorials/Running-the-Pipeline-batch.md",
+  "sourceDirName": "Tutorials",
+  "slug": "/Tutorials/Running-the-Pipeline-batch",
+  "permalink": "/gwas-sumstats-harmoniser-documentation/Tutorials/Running-the-Pipeline-batch",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/EBISPOT/gwas-sumstats-harmoniser-documentation/tree/main/docs/Tutorials/Running-the-Pipeline-batch.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Harmonising a single sumstat",
+    "permalink": "/gwas-sumstats-harmoniser-documentation/Tutorials/Running-the-Pipeline"
+  },
+  "next": {
+    "title": "Output Explanation",
+    "permalink": "/gwas-sumstats-harmoniser-documentation/category/output-explanation"
+  }
+}

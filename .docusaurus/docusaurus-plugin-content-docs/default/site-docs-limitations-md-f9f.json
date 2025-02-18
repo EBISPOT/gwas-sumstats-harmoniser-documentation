@@ -1,0 +1,27 @@
+{
+  "id": "Limitations",
+  "title": "Limitations and Considerations",
+  "description": "While our tools are designed to deliver robust and efficient solutions for harmonizing summary statistic data, it is important for users to understand certain limitations to make informed decisions when utilizing the harmonized results.",
+  "source": "@site/docs/Limitations.md",
+  "sourceDirName": ".",
+  "slug": "/Limitations",
+  "permalink": "/gwas-sumstats-harmoniser-documentation/Limitations",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/EBISPOT/gwas-sumstats-harmoniser-documentation/tree/main/docs/Limitations.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How-to guides",
+    "permalink": "/gwas-sumstats-harmoniser-documentation/how-to-guide"
+  },
+  "next": {
+    "title": "Reference guides",
+    "permalink": "/gwas-sumstats-harmoniser-documentation/category/reference-guides"
+  }
+}

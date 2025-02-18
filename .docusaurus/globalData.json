@@ -1,0 +1,133 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/gwas-sumstats-harmoniser-documentation/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/gwas-sumstats-harmoniser-documentation/",
+          "mainDocId": "Introduction/Overview",
+          "docs": [
+            {
+              "id": "Explanation/output-file-explanation",
+              "path": "/gwas-sumstats-harmoniser-documentation/Explanation/output-file-explanation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Explanation/output-folder-structure",
+              "path": "/gwas-sumstats-harmoniser-documentation/Explanation/output-folder-structure",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "how-to-guide",
+              "path": "/gwas-sumstats-harmoniser-documentation/how-to-guide",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Introduction/Genome-Build-Mapping",
+              "path": "/gwas-sumstats-harmoniser-documentation/Introduction/Genome-Build-Mapping",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Introduction/Harmonising-the-variants",
+              "path": "/gwas-sumstats-harmoniser-documentation/Introduction/Harmonising-the-variants",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Introduction/Orientation-of-palindromic-variants",
+              "path": "/gwas-sumstats-harmoniser-documentation/Introduction/Orientation-of-palindromic-variants",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Introduction/Overview",
+              "path": "/gwas-sumstats-harmoniser-documentation/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Introduction/Quality-control",
+              "path": "/gwas-sumstats-harmoniser-documentation/Introduction/Quality-control",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Limitations",
+              "path": "/gwas-sumstats-harmoniser-documentation/Limitations",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Reference-guide/Hm_code",
+              "path": "/gwas-sumstats-harmoniser-documentation/Reference-guide/Hm_code",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Reference-guide/Usefult-link",
+              "path": "/gwas-sumstats-harmoniser-documentation/Reference-guide/Usefult-link",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tutorials/Getting-Start",
+              "path": "/gwas-sumstats-harmoniser-documentation/Tutorials/Getting-Start",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tutorials/Preparing-Input-Files",
+              "path": "/gwas-sumstats-harmoniser-documentation/Tutorials/Preparing-Input-Files",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tutorials/Preparing-Reference-Files",
+              "path": "/gwas-sumstats-harmoniser-documentation/Tutorials/Preparing-Reference-Files",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tutorials/Preparing-the-Executor",
+              "path": "/gwas-sumstats-harmoniser-documentation/Tutorials/Preparing-the-Executor",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tutorials/Running-the-Pipeline",
+              "path": "/gwas-sumstats-harmoniser-documentation/Tutorials/Running-the-Pipeline",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tutorials/Running-the-Pipeline-batch",
+              "path": "/gwas-sumstats-harmoniser-documentation/Tutorials/Running-the-Pipeline-batch",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/introduction",
+              "path": "/gwas-sumstats-harmoniser-documentation/category/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/tutorial",
+              "path": "/gwas-sumstats-harmoniser-documentation/category/tutorial",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/output-explanation",
+              "path": "/gwas-sumstats-harmoniser-documentation/category/output-explanation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/reference-guides",
+              "path": "/gwas-sumstats-harmoniser-documentation/category/reference-guides",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/gwas-sumstats-harmoniser-documentation/category/introduction",
+                "label": "Introduction"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

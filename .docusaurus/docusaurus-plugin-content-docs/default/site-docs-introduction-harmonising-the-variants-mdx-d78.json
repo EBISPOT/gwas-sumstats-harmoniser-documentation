@@ -1,0 +1,27 @@
+{
+  "id": "Introduction/Harmonising-the-variants",
+  "title": "Harmonising the variants",
+  "description": "Each variant is harmonised by aligning it with a reference dataset—specifically, the Ensembl VCF reference. This process ensures allele consistency and corrects the orientation of alleles to match the forward strand. Proper harmonization is critical for ensuring that all variants are aligned correctly and ready for downstream analysis.",
+  "source": "@site/docs/Introduction/Harmonising-the-variants.mdx",
+  "sourceDirName": "Introduction",
+  "slug": "/Introduction/Harmonising-the-variants",
+  "permalink": "/gwas-sumstats-harmoniser-documentation/Introduction/Harmonising-the-variants",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/EBISPOT/gwas-sumstats-harmoniser-documentation/tree/main/docs/Introduction/Harmonising-the-variants.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Orientation of palindromic variants",
+    "permalink": "/gwas-sumstats-harmoniser-documentation/Introduction/Orientation-of-palindromic-variants"
+  },
+  "next": {
+    "title": "Quality control",
+    "permalink": "/gwas-sumstats-harmoniser-documentation/Introduction/Quality-control"
+  }
+}
