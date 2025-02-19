@@ -33,3 +33,20 @@ The liftover process, which standardises genomic coordinates to a common genome 
 - Current solution:
      
      When mapping variants to a different genome build, we prioritize using rsIDs when available. As a secondary strategy, we rely on liftover. It is essential to annotate whether positions were mapped via rsID or liftover and implement systematic checks to identify duplicates introduced during harmonization. This information is recorded in the `hm_coordinate_conversion` column, ensuring transparency in the harmonized summary statistics.
+
+## Reference-related challenges
+### Failed to harmonise variants
+You may notice that the number of variants in the final harmonized dataset is slightly lower than in the raw data. This occurs because some variants cannot be harmonized and are removed during the QC step.
+
+The success or failure of variant harmonization depends on whether the variant exists in the reference database (Ensembl variation database, currently using release 95 with dbSNP 151). During harmonization, each variant is matched against the reference using its chromosome and position (chr:pos). The effect allele (EA) and other allele (OA) are then compared with the reference REF-ALT pairs. This process determines whether the variant is on the forward strand and whether alleles need to be flipped. If a reference record is unavailable, this step cannot be performed, and the variant cannot be harmonized.
+
+A variant may fail to harmonize for the following reasons:
+1. No matching record is found in the reference database based on chr:pos.
+2. None of the allele pairs in the reference match the input variant.
+3. Multiple records exist for the same chr:pos:ref:alt, leading to ambiguity.
+
+- Current solution:
+
+We continuously monitor the harmonisation rate for each study. If a study has a harmonization rate lower than 90%, we make every effort to investigate the cause and reprocess the data if necessary.
+
+We also encourage users to report any concerns they may have about the data.
