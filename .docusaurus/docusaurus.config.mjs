@@ -126,7 +126,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2025 | EMBL-EBI is an Outstation of the <a href=\"https://www.embl.org/\"> European Molecular Biology Laboratory</a>| <a href=\"https://www.ebi.ac.uk/about/terms-of-use\">Terms of use</a> | <a href=\"https://www.ebi.ac.uk/long-term-data-preservation\"> Data Preservation Statement </a>"
+      "copyright": "Copyright © 2026 | EMBL-EBI is an Outstation of the <a href=\"https://www.embl.org/\"> European Molecular Biology Laboratory</a>| <a href=\"https://www.ebi.ac.uk/about/terms-of-use\">Terms of use</a> | <a href=\"https://www.ebi.ac.uk/long-term-data-preservation\"> Data Preservation Statement </a>"
     },
     "prism": {
       "theme": {

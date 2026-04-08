@@ -66,6 +66,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Tutorials/Customised-configuration",
+              "path": "/gwas-sumstats-harmoniser-documentation/Tutorials/Customised-configuration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Tutorials/Getting-Start",
               "path": "/gwas-sumstats-harmoniser-documentation/Tutorials/Getting-Start",
               "sidebar": "tutorialSidebar"

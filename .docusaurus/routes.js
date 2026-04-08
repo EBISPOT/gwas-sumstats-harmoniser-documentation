@@ -79,15 +79,15 @@ export default [
   },
   {
     path: '/gwas-sumstats-harmoniser-documentation/',
-    component: ComponentCreator('/gwas-sumstats-harmoniser-documentation/', 'a5b'),
+    component: ComponentCreator('/gwas-sumstats-harmoniser-documentation/', '712'),
     routes: [
       {
         path: '/gwas-sumstats-harmoniser-documentation/',
-        component: ComponentCreator('/gwas-sumstats-harmoniser-documentation/', 'cbc'),
+        component: ComponentCreator('/gwas-sumstats-harmoniser-documentation/', '4de'),
         routes: [
           {
             path: '/gwas-sumstats-harmoniser-documentation/',
-            component: ComponentCreator('/gwas-sumstats-harmoniser-documentation/', '703'),
+            component: ComponentCreator('/gwas-sumstats-harmoniser-documentation/', '8e2'),
             routes: [
               {
                 path: '/gwas-sumstats-harmoniser-documentation/category/introduction',
@@ -170,6 +170,12 @@ export default [
               {
                 path: '/gwas-sumstats-harmoniser-documentation/Reference-guide/Usefult-link',
                 component: ComponentCreator('/gwas-sumstats-harmoniser-documentation/Reference-guide/Usefult-link', 'ff3'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/gwas-sumstats-harmoniser-documentation/Tutorials/Customised-configuration',
+                component: ComponentCreator('/gwas-sumstats-harmoniser-documentation/Tutorials/Customised-configuration', '2a1'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

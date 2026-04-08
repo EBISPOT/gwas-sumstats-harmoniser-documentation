@@ -128,17 +128,17 @@
     },
     "content": "content---gwas-sumstats-harmoniser-documentation-markdown-page-393-745"
   },
-  "/gwas-sumstats-harmoniser-documentation/-a5b": {
+  "/gwas-sumstats-harmoniser-documentation/-712": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---gwas-sumstats-harmoniser-documentation-aba-6f1"
     }
   },
-  "/gwas-sumstats-harmoniser-documentation/-cbc": {
+  "/gwas-sumstats-harmoniser-documentation/-4de": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---gwas-sumstats-harmoniser-documentation-257-9c7"
   },
-  "/gwas-sumstats-harmoniser-documentation/-703": {
+  "/gwas-sumstats-harmoniser-documentation/-8e2": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/gwas-sumstats-harmoniser-documentation/category/introduction-5f1": {
@@ -196,6 +196,10 @@
   "/gwas-sumstats-harmoniser-documentation/Reference-guide/Usefult-link-ff3": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---gwas-sumstats-harmoniser-documentation-reference-guide-usefult-linkd-5-d-a04"
+  },
+  "/gwas-sumstats-harmoniser-documentation/Tutorials/Customised-configuration-2a1": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---gwas-sumstats-harmoniser-documentation-tutorials-customised-configuration-44-c-b94"
   },
   "/gwas-sumstats-harmoniser-documentation/Tutorials/Getting-Start-614": {
     "__comp": "__comp---theme-doc-item-178-a40",
